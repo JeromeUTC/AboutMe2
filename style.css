@@ -1,0 +1,285 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+	text-align: justify;
+	min-width: 405px;
+}
+
+/* Menu with link into the page */
+header {
+	background-image: url("img/fond.png");
+	background-repeat: repeat-x;
+	height: 72px;
+	width: 100%;
+	padding: 0 15%;	
+	margin-bottom: 80px;
+	position: fixed;
+	left: 0;
+	top:0;
+	z-index: 1;
+	min-width: 405px;
+}
+
+header li{
+	display: inline;
+}
+
+header nav a{
+	color: white;
+	position: relative;
+	left: 30%;
+	top: 10px;
+	text-decoration: none;
+	padding-left: 10px;
+	padding-right: 10px;
+	-webkit-transition:all .3s;
+	-moz-transition:all .3s;
+	-o-transition:all .3s;
+	transition:all .3s;
+}
+
+header nav a:hover{
+	opacity:.5;
+}
+
+#menu_responsive{
+	display: none;
+}
+
+/* Menu social icons */
+.social {
+	display:block;
+	position: relative;
+	left:55%;
+	top: -50px;
+	list-style:none;
+	margin:30px 0 0;
+}
+
+.social li {
+	display:inline-block;
+}
+
+.social li a {
+	width:32px;
+	height:32px;
+	display:inline-block;
+	background:url(img/sprite.png) 0 0 no-repeat;
+	text-indent:-9999px;
+	cursor:pointer;
+	margin-left:15px;
+}
+
+.social li a:hover {
+	opacity:.5;
+}
+
+.social .facebook a {
+	background-position:0 -186px;
+}
+
+.social .twitter a {
+	background-position:-32px -186px;
+}
+
+.social .dribbble a {
+	background-position:-64px -186px;
+}
+
+.social .linkedin a {
+	background-position:-96px -186px;
+}
+
+
+/*logo Antoine Barbare*/
+#logo{
+	background-image: url('img/logo.png');
+	background-repeat: no-repeat;
+	color:transparent;
+	padding-right: 280px;
+	padding-bottom: 50px;
+}
+
+
+/* Content of the website */
+#container{
+	margin-top: 100px;
+}
+
+/* Corespond to the differents pages */ 
+
+section{
+	background: url('img/section-bg.png') repeat-x left bottom;
+	overflow: hidden;
+	padding: 0 15%;
+	padding-top: 65px;
+	padding-bottom: 65px;
+	min-width: 320px;
+}
+
+
+/* Use to see the title of the section */
+.macouleur1 {
+	color:#252525;
+	font-family: "helvetica neue", helvetica, arial, sans-serif;
+	font-size:2.5em; 
+	font-weight:bold;
+	text-shadow: 0 1px 0px #e6e6e6;
+
+}
+
+.macouleur2 {
+	color:#252525;
+	font-size:2.5em; 
+	font-family:'Helvetica';
+	font-weight:lighter;
+	text-shadow: 0 1px 0px #e6e6e6;
+}
+
+.photo{
+	position: relative;
+	float: right;
+	max-width: 70%;
+	width: 50%;
+	z-index: 0;
+	padding: 10px;
+	margin-bottom: 10px;
+	background-color: #FFF;
+	border-radius: 3px;
+	-webkit-border-radius:3px;
+	box-shadow: 0 1px 5px rgba(0,0,0,.5);
+	-webkit-box-shadow: 0 1px 5px rgba(0,0,0,.5);
+}
+	
+.text_left{
+	width: 35%;
+	text-align: left;
+	float: left;
+}
+
+/* Footer */
+
+footer{
+	color: #8c8989;
+	width: 150px;
+	position: relative;
+	margin: auto auto;
+	text-align: center;
+}
+
+footer a{
+	color: #8c8989;
+}
+
+#footer{
+	border-top:1px solid #ddd;
+	padding-top: 10px !important;
+	padding-bottom: 10px !important;
+}
+
+@media screen and (max-width: 1200px){
+	header{
+		padding: 0 5%;
+	}
+	
+	#logo{
+		background-image: url("img/AB.png");
+	}
+	
+	header nav a{
+		position: relative;
+		left: 200px;	
+	}
+	
+	section{
+		padding: 0 5%;
+		padding-top: 65px;
+		padding-bottom: 65px;
+	}
+}
+
+
+@media screen and (max-width: 1024px){
+	.social{
+		display: none;
+	}
+	header nav{
+		float: right;
+		padding-right: 39%;
+	}
+	
+	.photo{
+		float: none;
+		margin-left: 15%;
+		margin-bottom: 30px;
+		margin-top: 30px;
+		width: 70%;
+	}
+	
+	.text_left{
+		float: none;
+		width: 100%;
+	}
+}
+
+@media screen and (max-device-width: 600px){
+	.macouleur1, .macouleur2{
+		font-size: 1.8em;
+	}
+	
+	header nav{
+		display: none;
+	}
+	
+	#menu_responsive{
+		display: inline;
+		position: relative;
+		float: right;
+		padding-right: 100px;
+	}
+	
+	.photo{
+		width: 70%;
+		margin-left: 10%;
+	}
+	
+	#container{
+		padding-right: 3%;
+		
+	}
+	
+}
+
+@media screen and (max-width: 600px){
+	.macouleur1, .macouleur2{
+		font-size: 1.8em;
+	}
+	
+	header nav{
+		display: none;
+	}
+	
+	#menu_responsive{
+		display: inline;
+		position: relative;
+		float: right;
+		padding-right: 100px;
+	}
+	
+	.photo{
+		width: 70%;
+		margin-left: 10%;
+	}
+	
+	#container{
+		padding-right: 3%;
+		
+	}
+	
+}
+
+
+
+
+
+
+
